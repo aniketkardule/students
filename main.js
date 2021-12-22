@@ -14,7 +14,7 @@ const dotenv = require("dotenv").config();
 
 /*'mongodb+srv://Aniket99:nukGCejeGNGVpL53@techruins1.wodui.mongodb.net/mobiles?retryWrites=true&w=majority'; */
 
-const Mobiles = require("./model/mobile");
+const Mobiles = require("./model/students");
 
 mongoose.connect(process.env.URI, {
 
