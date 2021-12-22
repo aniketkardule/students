@@ -52,7 +52,7 @@ app.post('/add', async(req,res) => {
 
 
     try{
-        new Students({name:req.query.name})
+        new Students(req.body);
 
     }catch(err){
         res.send('Error')
