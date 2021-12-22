@@ -8,7 +8,7 @@ const BodyParser = require("body-parser");
 
 const { request } = require("express");
 
-const client = new MongoClient('mongodb+srv://Aniket99:nukGCejeGNGVpL53@techruins1.wodui.mongodb.net/mobiles?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true });
+const client = new MongoClient('mongodb+srv://Aniket99:nukGCejeGNGVpL53@techruins1.wodui.mongodb.net/students?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true });
 
 const app = Express();
 
