@@ -45,15 +45,15 @@ app.use(function(req, res, next) {
 
 	
 app.post('/add', async(req,res) => {
-   const alien = new Students({
-        name: req.query.name
+  
+ 
    
  
-    })
+
 
     try{
-        const a1 =  await alien.save() 
-        res.json(a1)
+        new Students({name:req.query.name})
+
     }catch(err){
         res.send('Error')
     }
