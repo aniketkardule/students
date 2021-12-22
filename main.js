@@ -44,7 +44,7 @@ app.use(function(req, res, next) {
 
 
 	
-app.post('/add', async(req,res) => {
+app.post('/add', (req,res) => {
   
  
    
