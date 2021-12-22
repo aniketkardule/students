@@ -44,7 +44,17 @@ app.use(function(req, res, next) {
 
 
 	
+var myobj = { "_id":1,"name": "Company Inc", "address": "Highway 37" };
 
+  Students.insertOne(myobj, function(err, res) {
+
+    if (err) throw err;
+
+    console.log("1 document inserted");
+
+  
+
+  });
 		
 	
 
