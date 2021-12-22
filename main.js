@@ -44,18 +44,21 @@ app.use(function(req, res, next) {
 
 
 	
-var myobj = { "_id":1,"name": "Company Inc", "address": "Highway 37" };
+router.post('/add', async(req,res) => {
+   const alien = new Students({
+        name: req.body.name
+   
+ 
+    })
 
-  Students.insertOne(myobj, function(err, res) {
+    try{
+        const a1 =  await alien.save() 
+        res.json(a1)
+    }catch(err){
+        res.send('Error')
+    }
+})
 
-    if (err) throw err;
-
-    console.log("1 document inserted");
-
-  
-
-  });
-		
 	
 
 app.get("/", async (req,res) =>{
