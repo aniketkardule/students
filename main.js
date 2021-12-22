@@ -1,17 +1,46 @@
-const MongoClient = require('mongodb').MongoClient;
+const { MongoClient, ObjectID } = require("mongodb");
 
-const assert = require('assert');
+const Express = require("express");
 
-// Connection URL
+const Cors = require("cors");
 
-const url = 'mongodb+srv://$[username]:$[password]@$[hostlist]/$[database]?retryWrites=true';
+const BodyParser = require("body-parser");
 
-// Use connect method to connect to the Server
+const { request } = require("express");
 
-MongoClient.connect(url, function(err, client) {
+const client = new MongoClient('mongodb+srv://Aniket99:nukGCejeGNGVpL53@techruins1.wodui.mongodb.net/mobiles?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true });
 
-  assert.equal(null, err);
+const app = Express();
 
-  client.close();
+app.use(BodyParser.json());
+
+app.use(BodyParser.urlencoded({ extended: true }));
+
+app.use(Cors());
+
+var collection;
+
+app.get("/students", async(req,res) => {
+
+    const s = await collection.find({});
+
+    res.send(s);
+
+})
+
+app.listen("3000", async () => {
+
+    try {
+
+        await client.connect();
+
+        collection = client.db("mobiles").collection("students");
+
+    } catch (e) {
+
+        console.error(e);
+
+    }
 
 });
+
