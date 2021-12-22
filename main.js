@@ -44,9 +44,9 @@ app.use(function(req, res, next) {
 
 
 	
-router.post('/add', async(req,res) => {
+app.post('/add', async(req,res) => {
    const alien = new Students({
-        name: req.body.name
+        name: req.query.name
    
  
     })
