@@ -53,7 +53,7 @@ app.post('/add', (req,res) => {
 
     try{
        const student = new Students(req.body);
-
+student.save();
     }catch(err){
         res.send('Error')
     }
