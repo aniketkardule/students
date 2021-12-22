@@ -12,9 +12,9 @@ const { MongoClient, ObjectID } = require("mongodb");
 
 const dotenv = require("dotenv").config();
 
-/*'mongodb+srv://Aniket99:nukGCejeGNGVpL53@techruins1.wodui.mongodb.net/mobiles?retryWrites=true&w=majority'; */
 
-const Mobiles = require("./model/students");
+
+const Students = require("./model/students");
 
 mongoose.connect(process.env.URI, {
 
@@ -50,7 +50,7 @@ app.use(function(req, res, next) {
 
 app.get("/", async (req,res) =>{
 
-   const result = await Mobiles.find({},{name:1,cat:1,slug:1,mrp:1}).sort({_id:-1});
+   const result = await Students.find({},{name:1,cat:1,slug:1,mrp:1}).sort({_id:-1});
 
 	res.send(result);
 
