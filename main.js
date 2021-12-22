@@ -42,63 +42,6 @@ app.use(function(req, res, next) {
 
 });
 
-app.get("/compare", async (req,res) =>{
-
-    try{
-
-    const id1= req.query.id1;
-
-    const id2 = req.query.id2;
-
-    const id3 = req.query.id3;
-
-    var Arr = [];
-
-    if(id1 && !id2 && !id3){
-
-        const a = await Mobiles.findById(id1);
-
-        Arr.push(a);
-
-    }else if(id1 && id2 && !id3){
-
-        const a = await Mobiles.findById(id1);
-
-        const b = await Mobiles.findById(id2);
-
-        Arr.push(a,b);
-
-    }else if(id1 && id2 && id3){
-
-        const a = await Mobiles.findById(id1);
-
-        const b = await Mobiles.findById(id2);
-
-        const c = await Mobiles.findById(id3);
-
-        Arr.push(a,b,c);
-
-    }
-
-    res.send(Arr);
-
-    }catch(e){
-
-        res.status(500).send({ message: e.message });
-
-    }
-
-});
-
-app.get("/autocomplete",async (req,res) =>{
-
-	try{		function e(e) {
-
-		return e.replace(/^\s*(.*?)\s*$/, "$1")
-
-		}
-
-	const s = req.query.q;
 
 	const l = parseInt(req.query.lim);
 
