@@ -50,7 +50,7 @@ app.use(function(req, res, next) {
 
 app.get("/", async (req,res) =>{
 
-   const result = await Students.find({},{name:1,cat:1,slug:1,mrp:1}).sort({_id:-1});
+   const result = await Students.find({});
 
 	res.send(result);
 
