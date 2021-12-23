@@ -45,12 +45,12 @@ app.use(function(req, res, next) {
 
 	
 app.post("/", (req, res, next) => {
-
+const bd = JSON.parse(req.body);
   const product = new Students({
 
     _id: new mongoose.Types.ObjectId(),
 
-    name: req.body.name
+    name: bd.name
 
 
 
