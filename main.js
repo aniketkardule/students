@@ -44,15 +44,15 @@ app.use(function(req, res, next) {
 
 
 	
-router.post("/", (req, res, next) => {
+app.post("/", (req, res, next) => {
 
-  const product = new Product({
+  const product = new Students({
 
     _id: new mongoose.Types.ObjectId(),
 
-    name: req.body.name,
+    name: req.body.name
 
-    price: req.body.price
+
 
   });
 
