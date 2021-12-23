@@ -5,7 +5,7 @@ const MobileData = new mongoose.Schema({
     name: String,
 
 	cat:Number,
-	dpimg:String
+	
 })
 module.exports = mongoose.model('Student', MobileData);
 
