@@ -52,7 +52,7 @@ app.post('/add', (req,res) => {
 
 
     try{
-       const student = new Students(req.body);
+       const student = new Students(JSON.parse(req.body));
 student.save();
     }catch(err){
         res.send('Error')
