@@ -44,20 +44,49 @@ app.use(function(req, res, next) {
 
 
 	
-app.post('/add', (req,res) => {
-  
- 
-   
- 
+router.post("/", (req, res, next) => {
 
+  const product = new Product({
 
-    try{
-       const student = new Students(JSON.parse(req.body));
-student.save();
-    }catch(err){
-        res.send('Error')
-    }
-})
+    _id: new mongoose.Types.ObjectId(),
+
+    name: req.body.name,
+
+    price: req.body.price
+
+  });
+
+  product
+
+    .save()
+
+    .then(result => {
+
+      console.log(result);
+
+      res.status(201).json({
+
+        message: "Handling POST requests to /products",
+
+        createdProduct: result
+
+      });
+
+    })
+
+    .catch(err => {
+
+      console.log(err);
+
+      res.status(500).json({
+
+        error: err
+
+      });
+
+    });
+
+});
 
 	
 
