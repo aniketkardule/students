@@ -105,7 +105,7 @@ app.patch('/:id', async(req,res,next)=> {
 
     
 
-        var student = await Students.findById(parseInt(req.params.id)) 
+        let student = await Students.findById(parseInt(req.params.id)) 
 
         const b = req.body;
 	    for(var x in b){
