@@ -103,7 +103,7 @@ app.post("/", (req, res, next) => {
 
 app.patch('/:id',async(req,res,next)=> {
 
-    try{
+    
 
         const student = await Students.findById(parseInt(req.params.id)) 
 
@@ -114,7 +114,7 @@ app.patch('/:id',async(req,res,next)=> {
 
         const a1 = await student.save()
 
-        }.then(result => {
+        .then(result => {
 
       console.log(result);
 
