@@ -149,6 +149,25 @@ app.patch('/:id', async(req,res,next)=> {
 });
 
 
+
+app.delete('/:id', async(req,res,next)=> {
+
+    try{
+
+       await Students.findByIdAndDelete(parseInt(req.params.id)) 
+
+  }catch(e){
+      
+	  res.send(e)
+  
+  }
+});
+	
+
+        
+  
+
+
 	
 
 app.get("/", async (req,res) =>{
