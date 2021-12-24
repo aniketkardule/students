@@ -101,7 +101,7 @@ app.post("/", (req, res, next) => {
 
 
 
-app.patch('/:id',async(req,res,next)=> {
+app.patch('/:id',(req,res,next)=> {
 
     
 
@@ -112,7 +112,7 @@ app.patch('/:id',async(req,res,next)=> {
 	    student.x = b[x];
 	    } 
 
-        const a1 = await student.save()
+        tudent.save()
 
         .then(result => {
 
