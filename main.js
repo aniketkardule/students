@@ -112,7 +112,7 @@ app.patch('/:id',(req,res,next)=> {
 	    student.x = b[x];
 	    } 
 
-        tudent.save()
+        student.save()
 
         .then(result => {
 
