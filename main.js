@@ -106,14 +106,16 @@ app.patch('/:id', async(req,res,next)=> {
     
 
         let student = await Students.findById(parseInt(req.params.id)) 
-   /*     
+  
 	
         const b = req.body;
 	    for(var x in b){
-	    student.x = b[x];
+		    
+	          student[x] = b[x];
+		    
 	    } 
-*/
-	student.name = req.body.name;
+
+	
 	
         await student.save()
 
