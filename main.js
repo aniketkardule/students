@@ -48,7 +48,7 @@ app.post("/", (req, res, next) => {
 
   const product = new Students({
 
-    _id: new mongoose.Types.ObjectId(),
+    
 
     name: req.body.name
 
