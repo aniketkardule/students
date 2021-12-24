@@ -113,7 +113,7 @@ app.patch('/:id', async(req,res,next)=> {
 	    student.x = b[x];
 	    } 
 */
-	
+	student.name = req.body.name;
 	
         await student.save()
 
