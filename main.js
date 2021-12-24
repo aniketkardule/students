@@ -114,7 +114,7 @@ app.patch('/:id',async(req,res,next)=> {
 
         const a1 = await student.save()
 
-        .then(result => {
+        }.then(result => {
 
       console.log(result);
 
