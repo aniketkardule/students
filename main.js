@@ -102,7 +102,7 @@ app.patch('/:id',async(req,res)=> {
 
         const b = req.body;
 	    for(var x in b){
-	    student["+b[x]+"] = x;
+	    student.x = b[x];
 	    } 
 
         const a1 = await student.save()
