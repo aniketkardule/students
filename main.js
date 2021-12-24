@@ -48,7 +48,7 @@ app.post("/", (req, res, next) => {
 
   const product = new Students({
 
-    
+    _id:req.body._id,
 
     name: req.body.name
 
