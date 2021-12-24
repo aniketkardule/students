@@ -101,7 +101,7 @@ app.post("/", (req, res, next) => {
 
 
 
-app.patch('/:id',async(req,res)=> {
+app.patch('/:id',async(req,res,next)=> {
 
     try{
 
@@ -114,17 +114,34 @@ app.patch('/:id',async(req,res)=> {
 
         const a1 = await student.save()
 
-        res.json(a1)   
+        .then(result => {
 
-    }catch(err){
+      console.log(result);
 
-        res.send('Error')
+      res.status(201).json({
 
-    }
+        message: "Handling POST requests to /products",
+
+        createdProduct: result
+
+      });
+
+    })
+
+    .catch(err => {
+
+      console.log(err);
+
+      res.status(500).json({
+
+        error: err
+
+      });
+
+    });
 
 
-
-})
+});
 
 
 	
