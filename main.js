@@ -101,18 +101,18 @@ app.post("/", (req, res, next) => {
 
 
 
-app.patch('/:id', (req,res,next)=> {
+app.patch('/:id', async(req,res,next)=> {
 
     
 
-        var student = Students.findById(parseInt(req.params.id)) 
+        var student = await Students.findById(parseInt(req.params.id)) 
 
         const b = req.body;
 	    for(var x in b){
 	    student.x = b[x];
 	    } 
 
-        student.save()
+        await student.save()
 
         .then(result => {
 
