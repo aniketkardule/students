@@ -88,6 +88,38 @@ app.post("/", (req, res, next) => {
 
 });
 
+
+
+
+
+
+
+app.patch('/:id',async(req,res)=> {
+
+    try{
+
+        const student = await Students.findById(req.params.id) 
+
+        const b = req.body;
+	    for(var x in b){
+	    student["+b[x]+"] = x;
+	    } 
+
+        const a1 = await student.save()
+
+        res.json(a1)   
+
+    }catch(err){
+
+        res.send('Error')
+
+    }
+
+
+
+})
+
+
 	
 
 app.get("/", async (req,res) =>{
