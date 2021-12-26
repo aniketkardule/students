@@ -1,90 +1,11 @@
 
 
-  });
-
-  product
-
-    .save()
-
-   
-        const b = req.body;
-	    for(var x in b){
-		    
-	          student[x] = b[x];
-		    
-	    } 
-
-	
-	
-        
-const app = express();
-
-const port = process.env.PORT || 3000;
-
-const { mongoClient } = require("mongodb");
-
-const { MongoClient, ObjectID } = require("mongodb");
-
-const dotenv = require("dotenv").config();
-
-
-
-const Students = require("./model/students");
-
-mongoose.connect(process.env.URI, {
-
-	useNewUrlParser:true,	useCreateIndex:true,
-
-	useUnifiedTopology:true
-
-}).then(() => {
-
-	console.log("connection successful");
+  );
 
 })
 
 app.use(express.json());
 
-app.use(express.urlencoded({"extended":true}));
-
-app.use(function (req, res, next) {
-
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://zealstudentsrecord.000webhostapp.com');
-
-    // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-    // Request headers you wish to allow
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
-    // Set to true if you need the website to include cookies in the requests sent
-    // to the API (e.g. in case you use sessions)
-    res.setHeader('Access-Control-Allow-Credentials', true);
-
-    // Pass to next layer of middleware
-    next();
-});
-	
-app.post("/", (req, res, next) => {
-
-  const product = new Students({
-
-    _id:req.body._id,
-
-    name: req.body.name
-
-
-
-  });
-
-  product
-
-    .save()
-
-    .then(result => {
-
-      console.log(result);
 
       res.status(201).json({
 
