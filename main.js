@@ -376,10 +376,10 @@ app.delete('/:id', async(req,res,next)=> {
 
       
 
-      if(i != undefined){
+      
 
       try{
-
+          if(i != undefined){
       		const		s = Students.findById(parseInt(i));
 
       				res.send(s);
