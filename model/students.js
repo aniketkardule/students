@@ -6,7 +6,11 @@ const MobileData = new mongoose.Schema({
 	
 
 	
-
+branch:String,
+class:String,
+gen:String,
+dob:String,
+purl:String
 	
 
 	
