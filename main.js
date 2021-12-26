@@ -178,10 +178,10 @@ app.delete('/:id', async(req,res,next)=> {
       const g = req.query.gen;
 
       const s;
-
+      try{
       if(i){
 
-      try{
+      
 
       				s = Student.findById(parseInt(i));
 
