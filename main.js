@@ -188,11 +188,11 @@ app.delete('/:id', async(req,res,next)=> {
 res.send(s)
       }else if(n){
 
-      				 s = Students.find({name:{$regex:n,$options:'$i'}}).sort({_id:-1});
+      				 const = Students.find({name:{$regex:n,$options:'$i'}}).sort({_id:-1});
 res.send(s);
       }else{
 
-      				s = Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
+      				 = Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
 res.send(s);
       }
 
