@@ -192,8 +192,7 @@ res.send(s)
 res.send(s);
       }else{
 
-      				 s = Sudents.find({class:c,branch:b,gen:g}).sort({_id:-1});
-res.send(s);
+      				 
       }
 
       
