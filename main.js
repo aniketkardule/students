@@ -177,14 +177,15 @@ app.delete('/:id', async(req,res,next)=> {
 
       const g = req.query.gen;
 
-      var s;
+      
+	
       try{
       if(i){
 
       
 
-      				s = Students.findById(parseInt(i));
-
+      				 = Students.findById(parseInt(i));
+res.send(s)
       }else if(n){
 
       				s = Students.find({name:{$regex:n,$options:'$i'}}).sort({_id:-1});
@@ -199,7 +200,7 @@ app.delete('/:id', async(req,res,next)=> {
 
       
 
-      res.send(s);
+      
 
       
 
