@@ -1,45 +1,6 @@
 
 
-  );
-
-})
-
-app.use(express.json());
-
-
-      res.status(201).json({
-
-        message: "Handling POST requests to /products",
-
-        createdProduct: result
-
-      });
-
-    })
-
-    .catch(err => {
-
-      console.log(err);
-
-      res.status(500).json({
-
-        error: err
-
-      });
-
-    });
-
-});
-
-
-
-
-
-
-
-app.patch('/:id', async(req,res,next)=> {
-
-    
+  
 
         let student = await Students.findById(parseInt(req.params.id)) 
   
