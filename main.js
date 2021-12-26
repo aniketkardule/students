@@ -57,7 +57,12 @@ app.post("/", (req, res, next) => {
 
     _id:req.body._id,
 
-    name: req.body.name
+    name: req.body.name,
+	  branch:req.body.branch,
+	  class:req.body.class,
+	  gen:req.body.gen,
+	  dob:req.body.dob,
+	  purl:req.body.purl
 
 
 
