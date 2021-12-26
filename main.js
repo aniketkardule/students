@@ -187,7 +187,7 @@ app.delete('/:id', async(req,res,next)=> {
 
       }else if(n){
 
-      				s = Students.find({name:{$regex:s,$options:'$i'}}).sort({_id:-1});
+      				s = Students.find({name:{$regex:n,$options:'$i'}}).sort({_id:-1});
 
       }else{
 
