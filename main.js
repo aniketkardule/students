@@ -359,7 +359,10 @@ app.delete('/:id', async(req,res,next)=> {
 	
 
         
-  app.get("/search", (req,res) => {
+
+      
+
+      app.get("/search", (req,res) => {
 
       const n = req.query.name;
 
@@ -372,25 +375,28 @@ app.delete('/:id', async(req,res,next)=> {
       const g = req.query.gen;
 
       
-	
+
+      if(i != undefined){
+
       try{
-      if(i){
 
-      
+      		const		s = Students.findById(parseInt(i));
 
-      			const s = Students.findById(parseInt(i));
-res.send(s)
-      }else if(n){
+      				res.send(s);
 
-      				 const = Students.find({name:{$regex:n,$options:'$i'}}).sort({_id:-1});
-res.send(s);
+      }else if(n != undefined){
+
+      			const 	s = Students.find({name:{$regex:s,$options:'$i'}}).sort({_id:-1});
+
+      			res.send(s);
+
       }else{
 
-      		const s = Sudents.find({class:c,branch:b,gen:g}).sort({_id:-1});
-res.send(s);		 
-      }
+      	const			s = Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
 
-      
+      	res.send(s);
+
+      }
 
       
 
@@ -406,8 +412,13 @@ res.send(s);
 
    			 
 
-   }); 
+   });
 
+      
+
+      
+
+   
 
 	
 
