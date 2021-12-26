@@ -183,7 +183,7 @@ app.delete('/:id', async(req,res,next)=> {
 
       
 
-      				s = Student.findById(parseInt(i));
+      				s = Students.findById(parseInt(i));
 
       }else if(n){
 
