@@ -165,7 +165,7 @@ app.delete('/:id', async(req,res,next)=> {
 	
 
         
-   app.get("/search", (req, res) => {
+   app.get("/search", async(req, res) => {
 
 	const n = req.query.name;
 
@@ -181,13 +181,13 @@ app.delete('/:id', async(req,res,next)=> {
 
 		if (i != undefined) {
 
-			const ab = Students.findById(parseInt(i));
+			const ab = await Students.findById(parseInt(i));
 
 			res.send(ab);
 
 		} else if (n != undefined) {
 
-			const ac = Students.find({
+			const ac = await Students.find({
 
 				name: {
 
@@ -207,7 +207,7 @@ app.delete('/:id', async(req,res,next)=> {
 
 		} else {
 
-			const ad = Students.find({
+			const ad = await Students.find({
 
 				class: c,
 
