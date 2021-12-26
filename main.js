@@ -165,7 +165,53 @@ app.delete('/:id', async(req,res,next)=> {
 	
 
         
-  
+  app.get("/search", (req,res) => {
+
+      const n = req.query.name;
+
+      const i = req.query.id;
+
+      const c = req.query.class;
+
+      const b = req.query.branch;
+
+      const g = req.query.gen;
+
+      const s;
+
+      if(i){
+
+      try{
+
+      				s = Student.findById(parseInt(i));
+
+      }else if(n){
+
+      				s = Students.find({name:{$regex:s,$options:'$i'}}).sort({_id:-1});;
+
+      }else{
+
+      				s = Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
+
+      }
+
+      
+
+      
+
+      res.send(s);
+
+      
+
+    }catch(e){
+
+    				res.send(e);
+
+    }
+
+   			 
+
+   }); 
 
 
 	
