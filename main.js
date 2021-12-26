@@ -35,7 +35,7 @@ app.use(express.urlencoded({"extended":true}));
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://techruins.com');
+    res.setHeader('Access-Control-Allow-Origin', 'https://zealstudentsrecord.000webhostapp.com');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
