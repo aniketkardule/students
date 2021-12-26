@@ -177,7 +177,7 @@ app.delete('/:id', async(req,res,next)=> {
 
       const g = req.query.gen;
 
-      const s;
+      var s;
       try{
       if(i){
 
