@@ -6,47 +6,7 @@
 
     .save()
 
-    .then(result => {
-
-      console.log(result);
-
-      res.status(201).json({
-
-        message: "Handling POST requests to /products",
-
-        createdProduct: result
-
-      });
-
-    })
-
-    .catch(err => {
-
-      console.log(err);
-
-      res.status(500).json({
-
-        error: err
-
-      });
-
-    });
-
-});
-
-
-
-
-
-
-
-app.patch('/:id', async(req,res,next)=> {
-
-    
-
-        let student = await Students.findById(parseInt(req.params.id)) 
-  
-	
+   
         const b = req.body;
 	    for(var x in b){
 		    
@@ -56,85 +16,7 @@ app.patch('/:id', async(req,res,next)=> {
 
 	
 	
-        await student.save()
-
-        .then(result => {
-
-      console.log(result);
-
-      res.status(201).json({
-
-        message: "Handling POST requests to /products",
-
-        createdProduct: result
-
-      });
-
-    })
-
-    .catch(err => {
-
-      console.log(err);
-
-      res.status(500).json({
-
-        error: err
-
-      });
-
-    });
-
-
-});
-
-
-
-app.delete('/:id', async(req,res,next)=> {
-
-    try{
-
-       await Students.findByIdAndDelete(parseInt(req.params.id)) 
-
-  }catch(e){
-      
-	  res.send(e)
-  
-  }
-});
-	
-
         
-  app.get("/search", (req,res) => {
-
-      const n = req.query.name;
-
-      const i = req.query.id;
-
-      const c = req.query.class;
-
-      const b = req.query.branch;
-
-      const g = req.query.gen;
-
-      
-	
-      try{
-      if(i){
-
-      
-
-      			const s = Students.findById(parseInt(i));
-res.send(s)
-      }else if(n){
-
-      				 const = Students.find({name:{$regex:n,$options:'$i'}}).sort({_id:-1});
-res.send(s);
-      }else{
-
-      				const express = require("express");
-
-const mongoose = require("mongoose");
-
 const app = express();
 
 const port = process.env.PORT || 3000;
