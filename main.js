@@ -219,13 +219,7 @@ res.send(ak);
 		
 		}else {
 
-			const ad = await Students.find({
-
-				class: c,
-
-				branch: b,
-
-				gen: g
+			const ad = await Students.find({$and[{class:c},{branch:b},{gen:g}]
 
 			}).sort({
 
