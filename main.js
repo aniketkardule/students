@@ -113,12 +113,29 @@ app.patch('/:id', async(req,res,next)=> {
         let student = await Students.findById(parseInt(req.params.id)) 
   
 	
-        const b = req.body;
+   /*     const b = req.body;
 	    for(var x in b){
 		    
 	          student[x] = b[x];
 		    
-	    } 
+	    }    */
+	
+
+	student.name = req.body.name;
+student.branch = req.body.branch;
+student.class = req.body.class;
+student.gen = req.body.gen;
+student.dob = req.body.dob;
+student.purl = req.body.purl;
+
+
+	
+
+	
+
+	
+
+	
 
 	
 	
