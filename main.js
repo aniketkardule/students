@@ -214,7 +214,7 @@ app.delete('/:id', async(req,res,next)=> {
 		} else if(filter != undefined
 			 ){
 		
-		const ak = await Mobiles.find({}).sort({_id:-1});
+		const ak = await Students.find({}).sort({_id:-1});
 res.send(ak);
 		
 		}else {
