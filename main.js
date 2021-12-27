@@ -217,19 +217,28 @@ app.delete('/:id', async(req,res,next)=> {
 		const ak = await Students.find({}).sort({_id:-1});
 res.send(ak);
 		
-		}else {
-
-			const ad = await Students.find({$and:[{class:c},{branch:b},{gen:g}]
-
-			}).sort({
-
-				_id: -1
-
-			});
-
-			res.send(ad);
-
-		}
+		}else if (c && b && !g) {
+    const a = await Students.find({class:c,branch:b}).sort({_id:-1});
+    res.send(a);
+} else if (c && b && g) {
+    const b = await Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
+    res.send(b);
+} else if (!c && b && g) {
+    const c = await Students.find({branch:b,gen:g}).sort({_id:-1});
+    res.send(c);
+}else if(c && !b && g){
+				const d = await Students.find({class:c,gen:g}).sort({_id:-1});
+    res.send(d);
+}else if(c && !b && !g){
+				const e = await Students.find({class:c}).sort({_id:-1});
+    res.send(e);
+}else if(!c && b && !g){
+				const e = await Students.find({branch:b}).sort({_id:-1});
+    res.send(e);
+}else if(!c && !b && g){
+				const f = await Students.find({gen:g}).sort({_id:-1});
+    res.send(f);
+}
 
 	} catch (e) {
 
