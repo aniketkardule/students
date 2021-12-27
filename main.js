@@ -181,6 +181,7 @@ app.delete('/:id', async(req,res,next)=> {
 	const b = req.query.branch;
 
 	const g = req.query.gen;
+	   const filter = req.query.filter;
 
 	try {
 
@@ -210,7 +211,12 @@ app.delete('/:id', async(req,res,next)=> {
 
 			res.send(ac);
 
-		} else {
+		} else if(filter != undefined
+			 ){
+		
+		
+		
+		}else {
 
 			const ad = await Students.find({
 
