@@ -221,8 +221,8 @@ res.send(ak);
     const a = await Students.find({class:c,branch:b}).sort({_id:-1});
     res.send(a);
 } else if (c && b && g) {
-    const b = await Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
-    res.send(b);
+    const bbb = await Students.find({class:c,branch:b,gen:g}).sort({_id:-1});
+    res.send(bbb);
 } else if (!c && b && g) {
     const c = await Students.find({branch:b,gen:g}).sort({_id:-1});
     res.send(c);
