@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <title>How to Create responsive Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="styles/style.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
     <div class="wrapper">
         <div class="logo">
-            <img src="logo.jpg" alt="">
+            <img src="images/logo.jpg" alt="">
         </div>
 <ul class="nav-area">
 <li><a href="#">Home</a></li>
