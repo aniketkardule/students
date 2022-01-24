@@ -1,6 +1,6 @@
 <div style="background:#000;height:80px;opacity:.8;"  class="wrapper">
         <div class="logo">
-            <img width="70" src="logo.jpg" alt="">
+            <img width="70" src="images/logo.jpg" alt="">
         </div>
 <ul class="nav-area">
 <li><a href="#">Home</a></li>
