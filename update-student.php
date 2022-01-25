@@ -108,8 +108,7 @@ document.getElementById('submit').addEventListener('click', function(){
         dob:db.value,
         purl:pu.value
    }),
-  headers: {"Content-type": "application/json; charset=UTF-8",
-	   "Access-Control-Allow-Origin":"https://studentdiary1.herokuapp.com"}
+  headers: {"Content-type": "application/json; charset=UTF-8"}
 })
 .then(response => response.json()) 
 .then(json => { alert("Student with roll no "+id.value+" has been updated")})
