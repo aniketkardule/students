@@ -34,6 +34,12 @@ if(strpos($uri[1],"id") !== false){
 
 
 
+
+
+
+
+
+
 input[type=text], select,input[type=number]{
      width:90%;
      padding:10px;
@@ -74,7 +80,7 @@ input[type=text], select,input[type=number]{
      width:45%;
      border-radius:7px;
      align-items:center;
-     margin:20px auto;
+     margin:60px auto;
      height:370px;
 }
  input{
@@ -87,14 +93,15 @@ input[type=text], select,input[type=number]{
      border-radius:7px;
 }
  .astd{
-     top:140px;
-     right:40px;
+      position:absolute;
+     top:120px;
+     right:110px;
 }
  .fbf{
      text-align:center;
      background:#fff;
      width:45%;
-     margin:20px auto;
+     margin:60px auto ;
      border-radius:7px;
      height:370px;
 }
@@ -106,7 +113,7 @@ input[type=text], select,input[type=number]{
 }
  .rslt{
      width:90%;
-     margin:30px auto 30px;
+     margin:100px auto 30px;
      border-radius:7px;
      padding:10px;
      background:#fff;
@@ -166,7 +173,13 @@ input[type=text], select,input[type=number]{
  #filter{
      margin-bottom:30px;
 }
-						
+
+								
+								
+		
+
+								
+								
 		</style>
       </head>
       <body>
