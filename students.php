@@ -21,7 +21,7 @@ if(strpos($uri[1],"id") !== false){
 	<head>
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="style.css"/>
+                <link rel="stylesheet" href="styles/style.css"/>
 		<style>
 
 input[type=text], select,input[type=number]{
