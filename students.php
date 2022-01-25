@@ -24,12 +24,14 @@ if(strpos($uri[1],"id") !== false){
                 <link rel="stylesheet" href="styles/style.css"/>
 		<style>
 
+
+
 input[type=text], select,input[type=number]{
      width:90%;
-     padding: 12px 20px;
-     margin: 8px 0;
+     padding:10px;
+     margin:0 auto 20px auto;
      display: inline-block;
-     border: 1px solid #ccc;
+     border: 1px solid black;
      border-radius: 4px;
      box-sizing: border-box;
 }
@@ -42,7 +44,7 @@ input[type=text], select,input[type=number]{
      padding-bottom:30px;
 }
  p{
-     margin:10px;
+     margin:20px;
 }
  .result a{
      background:green;
@@ -153,6 +155,9 @@ input[type=text], select,input[type=number]{
 }
 
 								
+		
+
+								
 		</style>
       </head>
       <body>
@@ -160,21 +165,20 @@ input[type=text], select,input[type=number]{
 	<div class="result">
 		<div class="fltr">
 			<div class="fbn">
-				<p>Find Student By Roll No:</p>
+				<p class="note">Find Student By Roll No</p>
 				<input type="number" id="input">
 				<a id="id-search" href="#">Search</a>
 				<p>OR</p>
-				<p>Find Student By Name:</p>
+				<p class="note">Find Student By Name</p>
 				<input type="text" id="input1">
 				<a href="#" id="input-search">Search</a>
 				<a class="astd" href="add-student.php">Add Student</a><br>
                         </div>
 			<div class="fbf">
-				<p>OR</p>
-				<p>Find By Filter:</p>
+				<p class="note">Find By Filter</p>
 				<div class="sfbf">
 					<div class="sub-fbf">			
-						<p>Select Class:</p>
+						<p class="note">Select Class</p>
 						<select id="class">
 						    <option>ALL</option>
 						    <option>FE</option>
@@ -184,7 +188,7 @@ input[type=text], select,input[type=number]{
 						</select>
 					</div>
 					<div class="sub-fbf">
-						<p>Select Branch :</p>
+						<p class="note">Select Branch</p>
 						<select id="branch">
 						  <option>ALL</option>																					
 						  <option>Computer</option>	
@@ -196,7 +200,7 @@ input[type=text], select,input[type=number]{
 						</select>
 					</div>
 					<div class="sub-fbf">
-						<p>Select Gender:</p>
+						<p class="note">Select Gender</p>
 						<select id="gen">
 							<option>ALL</option>
 							<option>M</option>
