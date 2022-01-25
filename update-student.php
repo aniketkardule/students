@@ -10,7 +10,7 @@ $result = json_decode($fetch);
 
 <!DOCTYPE html>
 <html>
-          <link rel="stylesheet" href="style.css" />
+          <link rel="styles/stylesheet" href="style.css" />
 <style>
 input[type=text], select {
   width: 100%;
@@ -111,10 +111,9 @@ document.getElementById('submit').addEventListener('click', function(){
   headers: {"Content-type": "application/json; charset=UTF-8"}
 })
 .then(response => response.json()) 
-.then(json => { console.log(JSON.stringify(json))})
+.then(json => { alert("Student with roll no "+id.value+" has been updated")})
 .catch(err => console.log(err));
 
-    alert("Student with roll no "+id.value+" has been updated");
             });
 
      </script>
