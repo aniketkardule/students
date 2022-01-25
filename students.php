@@ -26,6 +26,8 @@ if(strpos($uri[1],"id") !== false){
 
 
 
+
+
 input[type=text], select,input[type=number]{
      width:90%;
      padding:10px;
@@ -154,6 +156,7 @@ input[type=text], select,input[type=number]{
      margin-bottom:30px;
 }
 
+								
 								
 		
 
