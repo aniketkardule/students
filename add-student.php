@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 <style>
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -17,31 +18,45 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
-  color: white;
+  background-color:lightblue;
+  color: ;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
+form{
+  width:80%;
+  margin:0 auto;
+}
+label{
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:center;
+  display:inline-block;
+  width:100%;
+  background:lightblue;
+  border: none;
+  border-radius: 4px;
 }
 
 .c {
+  width:75%;
+  margin:0 auto;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
+
 </style>
 <body>
 <?php include "header.php";    ?>
 
-<h3 style="margin-top:70px">Enter Student Details</h3>
+
 
 <div class="c">
+	<h3 style="margin-top:70px">Enter Student Details</h3>
   <form action="https://studentsappp.herokuapp.com/" method="POST">
       <label for="lname">Roll no</label>
        <input type="text" id="fname" name="_id" placeholder="Enter roll no">
@@ -70,9 +85,9 @@ input[type=submit]:hover {
       <option value="F">F</option>
    </select>
     <label for="country">Date Of Birth</label>
-    <input name="dob" id="" type="text" placeholder="Enter DOB">
+    <input name="dob" id="" type="date" placeholder="Enter DOB">
   <label for="country">Profile photo url</label>
-   <input name="purl" id="" type="text" placeholder="Enter Profile">
+   <input name="purl" id="" type="media" placeholder="Enter Profile">
     <input type="submit" value="Submit">
   </form>
 </div>
