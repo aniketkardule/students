@@ -29,6 +29,10 @@ if(strpos($uri[1],"id") !== false){
 
 
 
+
+
+
+
 input[type=text], select,input[type=number]{
      width:90%;
      padding:10px;
@@ -61,13 +65,17 @@ input[type=text], select,input[type=number]{
      height:370px;
      margin:0 auto;
 }
+.heading{
+     display:inline-block;
+     margin:10px auto 0 51px;
+}
  .fbn{
      text-align:center;
      background:#fff;
      width:45%;
      border-radius:7px;
      align-items:center;
-     margin:30px auto;
+     margin:21px auto;
      height:340px;
 }
  input{
@@ -82,14 +90,14 @@ input[type=text], select,input[type=number]{
 }
  .astd{
       position:absolute;
-     top:120px;
-     right:30px;
+     top:100px;
+     right:16.6%;
 }
  .fbf{
      text-align:center;
      background:#fff;
      width:45%;
-     margin:30px auto ;
+     margin:21px auto ;
      border-radius:7px;
      height:340px;
 }
@@ -131,16 +139,16 @@ input[type=text], select,input[type=number]{
  .s_info .u_img{
      width:100px;
      height:100px;
-     margin:auto;
+     margin:auto 20px auto 0;
      border:1.37px solid #000;
 }
  .s_info .u_img img{
      max-width:100px;
      display:block;
-     margin:0 auto;
+     margin:auto;
 }
- .s_info .u_dtl{
-     margin:0 120px;
+.s_info .u_dtl{
+     margin:0;
      height:100%;
      width:300px;
 }
@@ -198,7 +206,10 @@ input[type=text], select,input[type=number]{
           width:100%;
      }
      .s_info .u_dtl{
-          margin-left:60px;
+          
+     }
+     .s_lst{
+          width:100%;
      }
      .update{
           right:20%;
@@ -209,6 +220,7 @@ input[type=text], select,input[type=number]{
      
      
 }
+								
 								
 		</style>
       </head>
