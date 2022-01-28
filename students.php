@@ -196,7 +196,7 @@ input[type=text], select,input[type=number]{
 				<p>OR</p>
 				<p class="note">Find Student By Name</p>
 				<input type="text" id="input1">
-				<a href="#" id="input-search">Search</a>
+				<a href="#" id="input-search" onclick="findStu()">Search</a>
 				<a class="astd" href="add-student.php">Add Student</a><br>
                         </div>
 			<div class="fbf">
@@ -300,18 +300,41 @@ input[type=text], select,input[type=number]{
      			
      			
      })
-    document.getElementById('input-search').addEventListener('click', function(){
+		
+		//find student
+ function searchStudent(){
 
    const value = document.getElementById('input1').value;
-        document.location.href = "students.php?name="+value;
-});
+	     if(value){
+		     
+		         if(!hasNumbers(value)){
+		          document.location.href = "students.php?name="+value;
+		     }else{
+		        aleart("Please enter valid name");
+		     }
+		     
+		     
+		     
+	     }else{
+		     
+	     alert("Please Enter Some Value");
+	     }
+}
 
-
-document.getElementById('id-search').addEventListener('click', function(){
+        //find by id
+		
+function findById(){
 
    const value = document.getElementById('input').value;
-        document.location.href = "students.php?id="+value;
-})
+	if(value){
+		if(!isNaN(value)){
+		          document.location.href = "students.php?id="+value;
+		     }else{
+		        aleart("Please enter valid roll no");
+		     }
+        
+	}
+}
 	</script>
 	</body>
 </html>
