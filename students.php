@@ -27,6 +27,8 @@ if(strpos($uri[1],"id") !== false){
 <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 		<style>
 
+
+
 input[type=text], select,input[type=number]{
      width:90%;
      padding:10px;
@@ -44,9 +46,6 @@ input[type=text], select,input[type=number]{
      background:#f1f1f1;
       box-shadow:0 0 3px grey;
      padding-bottom:30px;
-}
- p{
-     margin:10px;
 }
  .result a{
      background:lightskyblue;
@@ -79,6 +78,7 @@ input[type=text], select,input[type=number]{
      background:lightblue;
      padding:10px;
      border-radius:7px;
+     margin:10px;
 }
  .astd{
       position:absolute;
@@ -101,7 +101,7 @@ input[type=text], select,input[type=number]{
 }
  .rslt{
      width:90%;
-     margin:30px auto 30px;
+     margin:30px auto 30px auto;
      border-radius:7px;
      padding:10px;
      background:#fff;
@@ -117,6 +117,7 @@ input[type=text], select,input[type=number]{
 }
  .s_info{
      max-height:200px;
+      padding:10px;
      display:flex;
      overflow:hidden;
      left:0;
@@ -130,13 +131,13 @@ input[type=text], select,input[type=number]{
  .s_info .u_img{
      width:100px;
      height:100px;
-     margin-top:50px;
+     margin:auto;
      border:1.37px solid #000;
 }
  .s_info .u_img img{
-     max-width:91%;
+     max-width:100px;
      display:block;
-     margin:auto;
+     margin:0 auto;
 }
  .s_info .u_dtl{
      margin:0 120px;
@@ -165,6 +166,49 @@ input[type=text], select,input[type=number]{
      margin-bottom:30px;
 }
 
+@media only screen and (max-width: 1000px) {
+     .result{
+          width:100%;
+     }
+     .nav-area{
+          display:none;
+     }
+}
+
+@media only screen and (max-width: 700px) {
+     .result{
+          width:100%;
+          margin-top:100px;
+     }
+     .astd{
+          top:70px;
+     }
+     .fltr{
+          display:block;
+     }
+     .fbn, .fbf{
+    
+     width:100%;
+          
+     
+     height:auto;
+}
+     .rslt{
+          margin-top:200px;
+          width:100%;
+     }
+     .s_info .u_dtl{
+          margin-left:60px;
+     }
+     .update{
+          right:20%;
+     }
+     #delete{
+          right:5%;
+     }
+     
+     
+}
 								
 		</style>
       </head>
