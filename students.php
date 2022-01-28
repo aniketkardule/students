@@ -192,11 +192,11 @@ input[type=text], select,input[type=number]{
 			<div class="fbn">
 				<p class="note">Find Student By Roll No</p>
 				<input type="number" id="input">
-				<a id="id-search" href="#">Search</a>
+				<a id="id-search"onclick="findById()" href="#">Search</a>
 				<p>OR</p>
 				<p class="note">Find Student By Name</p>
 				<input type="text" id="input1">
-				<a href="#" id="input-search" onclick="findStu()">Search</a>
+				<a href="#" id="input-search" onclick="findStudents()">Search</a>
 				<a class="astd" href="add-student.php">Add Student</a><br>
                         </div>
 			<div class="fbf">
