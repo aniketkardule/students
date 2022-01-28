@@ -196,7 +196,7 @@ input[type=text], select,input[type=number]{
 				<p>OR</p>
 				<p class="note">Find Student By Name</p>
 				<input type="text" id="input1">
-				<a href="#" id="input-search" onclick="searchStudents()">Search</a>
+				<a href="#" id="input-search" onclick="searchStudent()">Search</a>
 				<a class="astd" href="add-student.php">Add Student</a><br>
                         </div>
 			<div class="fbf">
