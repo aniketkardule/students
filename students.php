@@ -27,22 +27,6 @@ if(strpos($uri[1],"id") !== false){
 <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 		<style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 input[type=text], select,input[type=number]{
      width:90%;
      padding:10px;
@@ -54,19 +38,19 @@ input[type=text], select,input[type=number]{
 }
  .result{
      margin-top:60px;
-     width:95%;
+     width:75%;
      margin:30px auto;
      border-radius:7px;
      background:lightgrey;
      padding-bottom:30px;
 }
  p{
-     margin:20px;
+     margin:10px;
 }
  .result a{
-     background:green;
+     background:lightskyblue;
      color:#fff;
-     padding:10px;
+     padding:5px;
      font-weight:bold;
      text-decoration:none;
      border-radius:4px;
@@ -83,8 +67,8 @@ input[type=text], select,input[type=number]{
      width:45%;
      border-radius:7px;
      align-items:center;
-     margin:60px auto;
-     height:370px;
+     margin:30px auto;
+     height:340px;
 }
  input{
      text-align:center;
@@ -98,15 +82,15 @@ input[type=text], select,input[type=number]{
  .astd{
       position:absolute;
      top:120px;
-     right:110px;
+     right:30px;
 }
  .fbf{
      text-align:center;
      background:#fff;
      width:45%;
-     margin:60px auto ;
+     margin:30px auto ;
      border-radius:7px;
-     height:370px;
+     height:340px;
 }
  .sfbf{
      display:flex;
@@ -116,16 +100,18 @@ input[type=text], select,input[type=number]{
 }
  .rslt{
      width:90%;
-     margin:100px auto 30px;
+     margin:30px auto 30px;
      border-radius:7px;
      padding:10px;
      background:#fff;
 }
  ul{
-     list-style:none;
+     
 }
  .s_lst{
      margin:0 auto;
+     list-style:none;
+      font-size:15px;
      width:80%;
 }
  .s_info{
@@ -164,6 +150,7 @@ input[type=text], select,input[type=number]{
 }
  .update{
      position:absolute;
+      font-weight:bold;
      top:40%;
      right:20%;
 }
@@ -176,12 +163,6 @@ input[type=text], select,input[type=number]{
  #filter{
      margin-bottom:30px;
 }
-
-								
-								
-		
-
-								
 								
 		</style>
       </head>
