@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="styles/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 <style>
 input[type=text], select {
   width: 100%;
