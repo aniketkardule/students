@@ -311,7 +311,7 @@ input[type=text], select,input[type=number]{
 		         if(!hasNumbers(value)){
 		          document.location.href = "students.php?name="+value;
 		     }else{
-		        aleart("Please enter valid name");
+		        alert("Please enter valid name");
 		     }
 		     
 		     
