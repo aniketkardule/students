@@ -1,4 +1,4 @@
-<div style="background:#000;height:80px;opacity:.8;"  class="wrapper">
+<div class="wrapper">
         <div class="logo">
             <img width="70" src="images/logo.jpg" alt="">
         </div>
