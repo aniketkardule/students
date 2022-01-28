@@ -216,8 +216,8 @@ input[type=text], select,input[type=number]{
         <?php include "header.php";    ?>
 	<div class="result">
 		<h2 class="heading">Student Diary Student Record System</h2>
-			<div class="fbn">
 		<div class="fltr">
+			<div class="fbn">
 				<p class="note">Find Student By Roll No</p>
 				<input type="number" id="input">
 				<a id="id-search"onclick="findById()" href="#">Search</a>
