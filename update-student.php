@@ -10,7 +10,7 @@ $result = json_decode($fetch);
 
 <!DOCTYPE html>
 <html>
-          <link rel="styles/stylesheet" href="style.css" />
+          <link rel="styles/stylesheet" href="styles/style.css" />
 <style>
 input[type=text], select {
   width: 100%;
@@ -46,6 +46,7 @@ input[type=submit]:hover {
 	    position:absolute;
 		top:100px;
 		right:80px;
+		font-size:18px;
 	}
 </style>
 <body>
