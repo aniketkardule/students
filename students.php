@@ -328,13 +328,11 @@ function findById(){
 
    const value = document.getElementById('input').value;
 	if(value){
-		if(!isNaN(value)){
+		
 		          document.location.href = "students.php?id="+value;
 		     }else{
-		        aleart("Please enter valid roll no");
+		        alert("Please enter valid roll no");
 		     }
-        
-	}
 }
 		
 //Number Check Function
