@@ -216,6 +216,7 @@ input[type=text], select,input[type=number]{
         <?php include "header.php";    ?>
 	<div class="result">
 		<div class="fltr">
+			<h2 class="heading">Student Diary Student Record System</h2>
 			<div class="fbn">
 				<p class="note">Find Student By Roll No</p>
 				<input type="number" id="input">
