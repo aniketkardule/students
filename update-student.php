@@ -42,11 +42,17 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+	.to-dash{
+	    position:absolute;
+		top:100px;
+		right:80px;
+	}
 </style>
 <body>
 <?php include "header.php";    ?>
 
 <h3 style="margin-top:70px">Enter Student Details</h3>
+	<a class="to-dash" href="students.php">Back to dashboard</a>
 
 <div class="c">
   <div>
