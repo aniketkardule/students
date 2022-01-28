@@ -65,6 +65,9 @@ input[type=text], select,input[type=number]{
      height:370px;
      margin:0 auto;
 }
+.fltr p{
+	margin:10px;
+}
 .heading{
      display:inline-block;
      margin:10px auto 0 51px;
