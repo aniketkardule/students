@@ -335,6 +335,13 @@ function findById(){
         
 	}
 }
+		
+		
+		//Number Check Functio
+		
+		function hasNumber(myString) {
+  return /\d/.test(myString);
+}
 	</script>
 	</body>
 </html>
