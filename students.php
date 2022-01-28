@@ -41,7 +41,8 @@ input[type=text], select,input[type=number]{
      width:75%;
      margin:30px auto;
      border-radius:7px;
-     background:lightgrey;
+     background:#f1f1f1;
+      box-shadow:0 0 3px grey;
      padding-bottom:30px;
 }
  p{
@@ -163,6 +164,7 @@ input[type=text], select,input[type=number]{
  #filter{
      margin-bottom:30px;
 }
+
 								
 		</style>
       </head>
