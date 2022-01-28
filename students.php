@@ -260,11 +260,7 @@ input[type=text], select,input[type=number]{
 		</div>
 	</div>
 	<script>
-		//Number Check Function
 		
-		function hasNumber(myString) {
-  return /\d/.test(myString);
-}
 								    //Delete Function
 								function del(e, i){
 								    e.parentNode.style.maxHeight = "0px";
@@ -341,7 +337,11 @@ function findById(){
 	}
 }
 		
+//Number Check Function
 		
+		function hasNumbers(myString) {
+  return /\d/.test(myString);
+}		
 		
 	</script>
 	</body>
