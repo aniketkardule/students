@@ -95,12 +95,25 @@ label{
 
     <label>Branch</label>
        <select id="branch" value="<?=  $result->branch;  ?>" >
-            <option value="Computer">Computer</option>
-																												<option value="IT">IT</option>
-																												<option value="Mechanical">Mechanical</option>
-																												<option value="Civil">Civil</option>
-																												<option value="AI">AI</option>
-																												<option value="E &TC">E & TC</option>
+		<?php
+	    $l = array("Computer","IT","AI","Mechanical","Civil","A & TC");
+	    
+	    for($i=0;$i<sizeof($l);$i++){
+		    if($l[$i] !== $result->class){
+			    ?>
+	    <option value="<?= $l[$i];   ?>"><?= $l[$i];   ?></option>
+	    
+	    <?php
+	    }else{   ?>
+	    
+	    <option value="<?=  $l[$i];   ?>" selected><?=  $l[$i];   ?></option>
+	    
+	    
+	    <?php
+		    
+		    }
+	    
+	    }     ?>																									<option value="E &TC">E & TC</option>
       </select>
      <label>Class</label>
     <select id="class" name="class">
