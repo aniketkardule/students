@@ -14,6 +14,14 @@ if(strpos($uri[1],"id") !== false){
 }
 
 }else{$result = [];}
+
+$id;
+$name;
+if(strpos("id",$uri[1])){
+	$id = explode("id",$uri[1])[1];
+}else if(strpos("name",$uri[1])){
+        $id = explode("name",$uri[1])[1];
+}
     ?>
 
 
@@ -231,11 +239,11 @@ input[type=text], select,input[type=number]{
 		<div class="fltr">
 			<div class="fbn filter-box">
 				<p class="note">Find Student By Roll No</p>
-				<input type="number" id="input">
+				<input type="number" id="input" value="<?= $id;  ?>">
 				<a class="btn" id="id-search"onclick="findById()" href="#">Search</a>
 				<p>OR</p>
 				<p class="note">Find Student By Name</p>
-				<input type="text" id="input1">
+				<input type="text" id="input1" value="<?= $name;  ?>">
 				<a class="btn" href="#" id="input-search" onclick="searchStudent()">Search</a>
 				<a class="astd btn" href="add-student.php">Add Student</a><br>
                         </div>
