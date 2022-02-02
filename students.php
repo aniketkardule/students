@@ -51,7 +51,7 @@ input[type=text], select,input[type=number]{
       box-shadow:0 0 3px grey;
      padding-bottom:30px;
 }
- .result a{
+			.btn{
      background:lightskyblue;
      color:#fff;
      padding:5px;
@@ -235,12 +235,12 @@ input[type=text], select,input[type=number]{
 			<div class="fbn">
 				<p class="note">Find Student By Roll No</p>
 				<input type="number" id="input">
-				<a id="id-search"onclick="findById()" href="#">Search</a>
+				<a class="btn" id="id-search"onclick="findById()" href="#">Search</a>
 				<p>OR</p>
 				<p class="note">Find Student By Name</p>
 				<input type="text" id="input1">
-				<a href="#" id="input-search" onclick="searchStudent()">Search</a>
-				<a class="astd" href="add-student.php">Add Student</a><br>
+				<a class="btn" href="#" id="input-search" onclick="searchStudent()">Search</a>
+				<a class="astd btn" href="add-student.php">Add Student</a><br>
                         </div>
 			<div class="fbf">
 				<p class="note">Find By Filter</p>
@@ -296,10 +296,11 @@ input[type=text], select,input[type=number]{
 					<p class="branch">Branch:<?= $result[$i]->branch;   ?></p>
 					<p class="gen">Gender:<?= $result[$i]->gen;   ?></p>
 				</div>
-					<a href="update-student.php?id=<?=  $result[$i]->_id  ?>"	class="update">Update</a>
-					<a href="#" onclick="del(this,<?=  $result[$i]->_id;   ?>)" id="delete"	>Delete</a>										    </li>
+					<a class="btn update" href="update-student.php?id=<?=  $result[$i]->_id  ?>">Update</a>
+					<a class="btn" href="#" onclick="del(this,<?=  $result[$i]->_id;   ?>)" id="delete"	>Delete</a>										    </li>
                                   <?php      }      ?>
 		</ul>
+			<a class="developer-note" href="note.php">Note by Developer</a>
 		</div>
 	</div>
 	<script>
