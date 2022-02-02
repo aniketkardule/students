@@ -78,13 +78,13 @@ label{
 	<h3>Enter Student Details</h3>
 	<p class="dashboard"><a href="/students.php">Go to dashboard</a></p>
   <form action="https://studentsappp.herokuapp.com/" method="POST">
-      <label for="lname">Roll no</label>
-       <input type="text" id="fname" name="_id" placeholder="Enter roll no">
+      <label>Roll no</label>
+       <input type="text" id="fname" name="_id" placeholder="Enter roll no" required>
     <label for="fname">Name</label>
     <input type="text" id="fname" name="name" placeholder="Your name..">
 
-    <label for="lname">Branch</label>
-       <select name="branch" >
+    <label>Branch</label>
+       <select name="branch" required>
             <option value="Computer">Computer</option>
 																												<option value="IT">IT</option>
 																												<option value="Mechanical">Mechanical</option>
@@ -93,21 +93,21 @@ label{
 																												<option value="E & TC">E & TC</option>
       </select>
      <label for="lname">Class</label>
-    <select name="class">
+    <select name="class" required>
 <option value="FE">FE</option>
 <option value="SE">SE</option>
 <option value="TE">TE</option>
 <option value="BE">BE</option>
 </select>
-<label for="lname">Gender</label>
-<select name="gen">
+<label>Gender</label>
+<select name="gen" required>
      <option value="M">M</option>
       <option value="F">F</option>
    </select>
-    <label for="country">Date Of Birth</label>
-    <input name="dob" id="" type="date" placeholder="Enter DOB">
+    <label>Date Of Birth</label>
+    <input name="dob" id="" type="date" placeholder="Enter DOB" required>
   <label for="country">Profile photo url</label>
-   <input name="purl" id="" type="media" placeholder="Enter Profile">
+   <input name="purl" id="" type="media" placeholder="Enter Profile" required>
     <input type="submit" value="Submit">
   </form>
 </div>
