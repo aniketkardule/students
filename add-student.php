@@ -6,7 +6,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 <style>
 
-input[type=text], select {
+
+.nav-area{
+  display:none;
+}
+input[type=text],input, select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -30,6 +34,9 @@ form{
   width:80%;
   margin:0 auto;
 }
+h3{
+  margin:0 auto 10px 10%;
+}
 label{
   padding-top:10px;
   padding-bottom:10px;
@@ -48,6 +55,11 @@ label{
   background-color: #f2f2f2;
   padding: 20px;
 }
+@media (max-width:600px){
+  .c{
+    width:100%;
+  }
+}
 
 </style>
 <body>
@@ -56,7 +68,7 @@ label{
 
 
 <div class="c">
-	<h3 style="margin-top:70px">Enter Student Details</h3>
+	<h3>Enter Student Details</h3>
   <form action="https://studentsappp.herokuapp.com/" method="POST">
       <label for="lname">Roll no</label>
        <input type="text" id="fname" name="_id" placeholder="Enter roll no">
