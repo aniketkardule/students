@@ -106,7 +106,7 @@ label{
     <select id="class" name="class">
 	    <?php
 	    $l = array("FE","SE","TE","BE");
-	    echo $l;
+	    
 	    for($i=0;$i<sizeof($l);$i++){
 		    if($l[$i] !== $result->class){
 			    ?>
@@ -186,9 +186,8 @@ document.getElementById('submit').addEventListener('click', function(){
             });
 
      </script>
-</body>
-</html>
-
-
+	<?php
+		    
+		   echo $l;    ?>
 </body>
 </html>
