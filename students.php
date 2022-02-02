@@ -17,6 +17,7 @@ if(strpos($uri[1],"id") !== false){
 
 $id;
 $name;
+echo $uri[1];
 if(strpos($uri[1],"id")){
 	$id = explode("id",$uri[1])[1];
 	echo "id".explode("id",$uri[1]);
