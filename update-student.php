@@ -44,8 +44,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-form{
+.form{
   width:80%;
   margin:0 auto;
 }
@@ -87,14 +86,14 @@ label{
 <div class="c">
 	<h3>Enter Student Details</h3>
 	<p class="dashboard"><a href="/students.php">Go to dashboard</a></p>
-  <form action="#">
+  <div class="form">
       <label>Roll no</label>
        <input type="text" id="rn" value="<?=  $result->_id;  ?>" placeholder="Enter roll no">
     <label>Name</label>
     <input type="text" id="name" value="<?=  $result->name;  ?>" placeholder="Your name..">
 
     <label>Branch</label>
-       <select id="branch" value="<?=  $result->branch;  ?>" >
+       <select id="branch">
 		<?php
 	    $l = array("Computer","IT","AI","Mechanical","Civil","A & TC");
 	    
@@ -138,7 +137,7 @@ label{
 	    }     ?>
 </select>
 <label for="lname">Gender</label>
-<select id="gen" value="<?=  $result->gen;  ?>">
+<select id="gen">
      <?php
 	    $l = array("M","F");
 	    for($i=0;$i<sizeof($l);$i++){
@@ -163,7 +162,7 @@ label{
   <label>Profile photo url</label>
    <input value="<?=  $result->purl;  ?>" id="purl" type="text" placeholder="Enter Profile">
     <input id="submit" type="submit" value="Submit">
-  </form>
+  </div>
 </div>
      <script>
 
