@@ -106,6 +106,7 @@ label{
     <select id="class" name="class">
 	    <?php
 	    $l = array("FE","SE","TE","BE");
+	    echo $l;
 	    for($i=0;$i<sizeof($l);$i++){
 		    if($l[$i] !== $result->class){
 			    ?>
