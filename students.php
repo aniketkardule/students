@@ -27,12 +27,6 @@ if(strpos($uri[1],"id") !== false){
 <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 		<style>
 
-
-
-
-
-
-
 input[type=text], select,input[type=number]{
      width:90%;
      padding:10px;
@@ -112,6 +106,7 @@ input[type=text], select,input[type=number]{
      width:90%;
      margin:30px auto 30px auto;
      border-radius:7px;
+      position:relative;
      padding:10px;
      background:#fff;
 }
@@ -170,6 +165,13 @@ input[type=text], select,input[type=number]{
      top:40%;
      right:10%;
 }
+.developer-note{
+	float:right;
+	position:absolute;
+	bottom:-50px;
+	right:10px;
+	
+}
  #filter{
      margin-bottom:30px;
 }
@@ -219,9 +221,7 @@ input[type=text], select,input[type=number]{
      }
      
      
-}
-								
-								
+}				
 		</style>
       </head>
       <body>
