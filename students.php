@@ -19,7 +19,7 @@ $id;
 $name;
 if(strpos($uri[1],"id")){
 	$id = explode("id",$uri[1])[1];
-	echo "id".explode("id",$uri[1])[0];
+	echo "id".explode("id",$uri[1]);
 }else if(strpos($uri[1],"name")){
         $id = explode("name",$uri[1])[1];
 	echo "name".explode("name",$uri[1]);
