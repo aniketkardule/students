@@ -17,8 +17,8 @@ if(strpos($uri[1],"id") !== false){
 
 $id;
 $name;
-if(strpos("id",$uri[1])){
-	$id = explode("id",$uri[1])[0];
+if(strpos($uri[1],"id")){
+	$id = explode($uri[1],"id")[0];
 }else if(strpos("name",$uri[1])){
         $id = explode("name",$uri[1])[0];
 }
