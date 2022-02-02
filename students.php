@@ -51,6 +51,9 @@ input[type=text], select,input[type=number]{
       box-shadow:0 0 3px grey;
      padding-bottom:30px;
 }
+			.flex{
+			    display:flex;
+			}
 			.btn{
      background:lightskyblue;
      color:#fff;
@@ -72,14 +75,17 @@ input[type=text], select,input[type=number]{
      display:inline-block;
      margin:10px auto 0 51px;
 }
- .fbn{
-     text-align:center;
+			.filter-box{
+			 text-align:center;
      background:#fff;
      width:45%;
      border-radius:7px;
      align-items:center;
      margin:21px auto;
      height:340px;
+			}			
+ .fbn{
+     
 }
  input{
      text-align:center;
@@ -97,15 +103,7 @@ input[type=text], select,input[type=number]{
      right:16.6%;
 }
  .fbf{
-     text-align:center;
-     background:#fff;
-     width:45%;
-     margin:21px auto ;
-     border-radius:7px;
-     height:340px;
-}
- .sfbf{
-     display:flex;
+    
 }
  .sub-fbf{
      width:33.33%;
@@ -129,7 +127,6 @@ input[type=text], select,input[type=number]{
  .s_info{
      max-height:200px;
       padding:10px;
-     display:flex;
      overflow:hidden;
      left:0;
      -webkit-transition: 0.6s;
@@ -232,7 +229,7 @@ input[type=text], select,input[type=number]{
 	<div class="result">
 		<h2 class="heading">Student Diary Student Record System</h2>
 		<div class="fltr">
-			<div class="fbn">
+			<div class="fbn filter-box">
 				<p class="note">Find Student By Roll No</p>
 				<input type="number" id="input">
 				<a class="btn" id="id-search"onclick="findById()" href="#">Search</a>
@@ -242,9 +239,9 @@ input[type=text], select,input[type=number]{
 				<a class="btn" href="#" id="input-search" onclick="searchStudent()">Search</a>
 				<a class="astd btn" href="add-student.php">Add Student</a><br>
                         </div>
-			<div class="fbf">
+			<div class="fbf filter-box">
 				<p class="note">Find By Filter</p>
-				<div class="sfbf">
+				<div class="flex">
 					<div class="sub-fbf">			
 						<p class="note">Select Class</p>
 						<select id="class">
@@ -284,7 +281,7 @@ input[type=text], select,input[type=number]{
 			<p>Top results ></p>
 			<ul class="s_lst">
     <?php     for($i=0; $i<sizeof($result);$i++){    ?>
-				<li class="s_info">
+				<li class="s_info flex">
 			        <div class="u_img">
 					<img src="images/userimg.png" />
 				</div>
