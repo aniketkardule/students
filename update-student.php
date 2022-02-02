@@ -112,7 +112,7 @@ label{
 		    
 		    }
 	    
-	    }     ?>																									<option value="E &TC">E & TC</option>
+	    }     ?>																									
       </select>
      <label>Class</label>
     <select id="class" name="class">
@@ -197,9 +197,6 @@ document.getElementById('submit').addEventListener('click', function(){
 
             });
 
-     </script>
-	<?php
-		    
-		   echo $l[0];    ?>
+	</script>
 </body>
 </html>
