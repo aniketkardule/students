@@ -85,12 +85,12 @@ label{
 
     <label for="lname">Branch</label>
        <select name="branch" >
-            <option value="COMPUTER">Computer</option>
+            <option value="Computer">Computer</option>
 																												<option value="IT">IT</option>
-																												<option value="MECHANICAL">Mechanical</option>
-																												<option value="CIVIL">Civil</option>
+																												<option value="Mechanical">Mechanical</option>
+																												<option value="Civil">Civil</option>
 																												<option value="AI">AI</option>
-																												<option value="E &TC">E & TC</option>
+																												<option value="E & TC">E & TC</option>
       </select>
      <label for="lname">Class</label>
     <select name="class">
