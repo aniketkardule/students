@@ -6,7 +6,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet">
 <style>
 
-
+.dashboard{
+  position:absolute;
+  top:10px;
+  right:11%;
+  color:yellow;
+}
 .nav-area{
   display:none;
 }
@@ -51,6 +56,7 @@ label{
 .c {
   width:75%;
   margin:0 auto;
+  position:relative;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -61,6 +67,7 @@ label{
   }
 }
 
+
 </style>
 <body>
 <?php include "header.php";    ?>
@@ -69,6 +76,7 @@ label{
 
 <div class="c">
 	<h3>Enter Student Details</h3>
+	<p class="dashboard"><a href="/students.php">Go to dashboard</a></p>
   <form action="https://studentsappp.herokuapp.com/" method="POST">
       <label for="lname">Roll no</label>
        <input type="text" id="fname" name="_id" placeholder="Enter roll no">
