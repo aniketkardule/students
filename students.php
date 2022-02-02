@@ -278,7 +278,10 @@ input[type=text], select,input[type=number]{
 					
 	</div>
 		<div class="rslt">
-			<p>Top results ></p>
+	          <?php
+			if($url != "https://studentdiary1.herokuapp.com/students.php"){   ?>   
+			<p>Top results <?= sizeof($result);   ?>&gt;</p>
+			<?php   }   ?>
 			<ul class="s_lst">
     <?php     for($i=0; $i<sizeof($result);$i++){    ?>
 				<li class="s_info flex">
