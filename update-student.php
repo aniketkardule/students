@@ -117,17 +117,17 @@ label{
      <label>Class</label>
     <select id="class" name="class">
 	    <?php
-	    $l = array("FE","SE","TE","BE");
+	    $m = array("FE","SE","TE","BE");
 	    
-	    for($i=0;$i<sizeof($l);$i++){
+	    for($i=0;$i<sizeof($m);$i++){
 		    if($l[$i] !== $result->class){
 			    ?>
-	    <option value="<?= $l[$i];   ?>"><?= $l[$i];   ?></option>
+	    <option value="<?= $m[$i];   ?>"><?= $m[$i];   ?></option>
 	    
 	    <?php
 	    }else{   ?>
 	    
-	    <option value="<?=  $l[$i];   ?>" selected><?=  $l[$i];   ?></option>
+	    <option value="<?=  $m[$i];   ?>" selected><?=  $m[$i];   ?></option>
 	    
 	    
 	    <?php
@@ -139,16 +139,16 @@ label{
 <label>Gender</label>
 <select id="gen" name="gen">
      <?php
-	    $l = array("M","F");
-	    for($i=0;$i<sizeof($l);$i++){
+	    $n = array("M","F");
+	    for($i=0;$i<sizeof($n);$i++){
 		    if($l[$i] !== $result->class){
 			    ?>
-	    <option value="<?= $l[$i];   ?>"><?= $l[$i];   ?></option>
+	    <option value="<?= $n[$i];   ?>"><?= $n[$i];   ?></option>
 	    
 	    <?php
 	    }else{   ?>
 	    
-	    <option value="<?=  $l[$i];   ?>" selected><?=  $l[$i];   ?></option>
+	    <option value="<?=  $n[$i];   ?>" selected><?=  $n[$i];   ?></option>
 	    
 	    
 	    <?php
@@ -200,6 +200,6 @@ document.getElementById('submit').addEventListener('click', function(){
      </script>
 	<?php
 		    
-		   echo $l;    ?>
+		   echo $l[0];    ?>
 </body>
 </html>
