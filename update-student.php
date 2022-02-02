@@ -93,7 +93,7 @@ label{
     <input type="text" id="name" value="<?=  $result->name;  ?>" placeholder="Your name..">
 
     <label>Branch</label>
-       <select id="branch">
+       <select id="branch" name="branch">
 		<?php
 	    $l = array("Computer","IT","AI","Mechanical","Civil","A & TC");
 	    
@@ -136,8 +136,8 @@ label{
 	    
 	    }     ?>
 </select>
-<label for="lname">Gender</label>
-<select id="gen">
+<label>Gender</label>
+<select id="gen" name="gen">
      <?php
 	    $l = array("M","F");
 	    for($i=0;$i<sizeof($l);$i++){
