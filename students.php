@@ -273,7 +273,7 @@ input[type=text], select,input[type=number]{
 						</select>
 					</div>
 				</div>
-					<p id="filter" style="margin-top:30px"><a href="#">Find Students</a></p>
+					<p class="btn" id="filter" style="margin-top:30px">Find Students</p>
 			</div>		
 					
 	</div>
