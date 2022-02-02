@@ -306,9 +306,7 @@ input[type=text], select,input[type=number]{
 								function del(e, i){
 								    e.parentNode.style.maxHeight = "0px";
 								    
-								    fetch('https://studentsappp.herokuapp.com/'+i,{ method:'DELETE' }).then(response=>{ return response.json() }).then(data=>{
-								        alert("Student with roll no "+i+"has been deleted");
-								    } );
+								    fetch('https://studentsappp.herokuapp.com/'+i,{ method:'DELETE' }).then(response=>{ return response.json() }).then(data=> console.log(data) );
 								}
 								    
 								    //Filter
