@@ -120,7 +120,7 @@ label{
 	    $m = array("FE","SE","TE","BE");
 	    
 	    for($i=0;$i<sizeof($m);$i++){
-		    if($l[$i] !== $result->class){
+		    if($l[$i] !== $result->branch){
 			    ?>
 	    <option value="<?= $m[$i];   ?>"><?= $m[$i];   ?></option>
 	    
@@ -141,7 +141,7 @@ label{
      <?php
 	    $n = array("M","F");
 	    for($i=0;$i<sizeof($n);$i++){
-		    if($l[$i] !== $result->class){
+		    if($l[$i] !== $result->gen){
 			    ?>
 	    <option value="<?= $n[$i];   ?>"><?= $n[$i];   ?></option>
 	    
