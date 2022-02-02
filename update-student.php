@@ -103,16 +103,46 @@ label{
 																												<option value="E &TC">E & TC</option>
       </select>
      <label>Class</label>
-    <select id="class" name="class" value="<?=  $result->class;  ?>">
-<option value="FE">FE</option>
-<option value="SE">SE</option>
-<option value="TE">TE</option>
-<option value="BE">BE</option>
+    <select id="class" name="class">
+	    <?php
+	    $l = array("FE","SE","TE","BE");
+	    for($i=0;$i<sizeof($l);$i++){
+		    if($l[$i] !== $result->class){
+			    ?>
+	    <option value="<?= $l[$i];   ?>"><?= $l[$i];   ?></option>
+	    
+	    <?php
+	    }else{   ?>
+	    
+	    <option value="<?=  $l[$i];   ?>" selected><?=  $l[$i];   ?></option>
+	    
+	    
+	    <?php
+		    
+		    }
+	    
+	    }     ?>
 </select>
 <label for="lname">Gender</label>
 <select id="gen" value="<?=  $result->gen;  ?>">
-     <option value="M">M</option>
-      <option value="F">F</option>
+     <?php
+	    $l = array("M","F");
+	    for($i=0;$i<sizeof($l);$i++){
+		    if($l[$i] !== $result->class){
+			    ?>
+	    <option value="<?= $l[$i];   ?>"><?= $l[$i];   ?></option>
+	    
+	    <?php
+	    }else{   ?>
+	    
+	    <option value="<?=  $l[$i];   ?>" selected><?=  $l[$i];   ?></option>
+	    
+	    
+	    <?php
+		    
+		    }
+	    
+	    }     ?>
    </select>
     <label>Date Of Birth</label>
     <input value="<?=  $result->dob;  ?>" id="dob" type="text" placeholder="Enter DOB">
