@@ -95,10 +95,10 @@ label{
     <label>Branch</label>
        <select id="branch" name="branch">
 		<?php
-	    $l = array("Computer","IT","AI","Mechanical","Civil","A & TC");
+	    $l = array("Computer","IT","AI","Mechanical","Civil","E & TC");
 	    
 	    for($i=0;$i<sizeof($l);$i++){
-		    if($l[$i] !== $result->class){
+		    if($l[$i] !== $result->branch){
 			    ?>
 	    <option value="<?= $l[$i];   ?>"><?= $l[$i];   ?></option>
 	    
@@ -120,7 +120,7 @@ label{
 	    $m = array("FE","SE","TE","BE");
 	    
 	    for($i=0;$i<sizeof($m);$i++){
-		    if($l[$i] !== $result->branch){
+		    if($l[$i] !== $result->class){
 			    ?>
 	    <option value="<?= $m[$i];   ?>"><?= $m[$i];   ?></option>
 	    
