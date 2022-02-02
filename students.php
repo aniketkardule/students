@@ -22,6 +22,8 @@ if(strpos($uri[1],"id")){
 }else if(strpos($uri[1],"name")){
         $id = explode("name",$uri[1])[1];
 }
+echo "id".$id;
+echo "name".$name;
     ?>
 
 
