@@ -44,6 +44,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
 .form{
   width:80%;
   margin:0 auto;
