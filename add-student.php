@@ -64,7 +64,7 @@ label{
 }
 @media (max-width:600px){
   .c{
-    width:100%;
+    width:auto;
   }
 }
 
