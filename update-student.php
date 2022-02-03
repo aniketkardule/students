@@ -46,12 +46,9 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-.form{
+.form, h3{
   width:80%;
   margin:0 auto;
-}
-h3{
-  margin:0 auto 10px 10%;
 }
 label{
   padding-top:10px;
