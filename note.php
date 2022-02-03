@@ -41,6 +41,7 @@
   
   </head>
   <body>
+      <?php include "header.php";    ?>
     <div class="c box">
       <h3 class="box">Note by Developer</h3>
       <a class="dashboard" href="students.php">Go to Dashboard</a>
