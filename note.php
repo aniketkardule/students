@@ -31,7 +31,7 @@
     }
     @media (max-width:600px){
       .c, .note, h3{
-        width:100%;
+        width:auto;
       }
       .dashboard{
         right:40px;
