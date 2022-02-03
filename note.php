@@ -34,7 +34,7 @@
         width:100%;
       }
       .dashboard{
-        right:20px;
+        right:40px;
       }
     }
   </style>
