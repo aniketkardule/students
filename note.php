@@ -47,14 +47,14 @@
       <a class="dashboard" href="students.php">Go to Dashboard</a>
       <p class="note box">
         Welcome to student diary student management system, I'm Aniket Kardule and I have developed this app using technologies HTML/CSS, javascript, php, rest API. This app can perform CRUD operations on student information , where we can perform creating new student with a add student button given on dashboard on top right corner also we can filter students with their respective data by using their name, roll no or using filter dashboard given on right side of controls. When we click on search or find, webpage reloads and php performs fetching the api and displaying the result on screen also javascript helps to validate forms.
-
-<strong>If you found webpage results empty then someone may have deleted all the records, please try adding sample students if you want to check how this app works, as this app is public so I can't put login system to this </strong>
+<br><br><br>
+<strong>If you found webpage results empty then someone may have deleted all the records, please try adding sample students if you want to check how this app works, as this app is public so I can't put login system to this </strong><br><br><br>
 
 <strong>Api is developed by me also using Node.js, mongoDb, express.js</strong>
 
 And thanks for visiting my app
 
-You can contact me on my <a href="mailto:karduleaniket99@gmail.com">mail</a>.ivwckde   binoxdqks bdinow bi2ndoqxk bifndoxk binodck  bifnekc  bifnkc  bifnoc 9on2clk binokc  ioneck ifnock oncl nonmek nioeck
+You can contact me on my <a href="mailto:karduleaniket99@gmail.com">mail</a>.
       
       </p>
     
