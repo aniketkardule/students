@@ -197,7 +197,7 @@ input[type=text], select,input[type=number]{
      }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
      .result{
           width:100%;
           margin-top:100px;
@@ -216,14 +216,14 @@ input[type=text], select,input[type=number]{
      height:auto;
 }
      .rslt{
-          margin-top:200px;
-          width:100%;
+          margin-top:250px;
+          width:auto;
      }
      .s_info .u_dtl{
           
      }
      .s_lst{
-          width:100%;
+          width:auto;
      }
      .update{
           right:20%;
@@ -234,6 +234,7 @@ input[type=text], select,input[type=number]{
      
      
 }				
+			
 		</style>
       </head>
       <body>
