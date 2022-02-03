@@ -63,7 +63,7 @@ label{
   padding: 20px;
 }
 @media (max-width:600px){
-  .c{
+  .c, .form{
     width:auto;
   }
 }
