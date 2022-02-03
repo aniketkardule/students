@@ -70,7 +70,7 @@ label{
   padding: 20px;
 }
 @media (max-width:600px){
-  .c, .form{
+  .c, .form, h3{
     width:auto;
   }
 }
