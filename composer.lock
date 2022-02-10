@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "mongodb/mongodb",
-            "version": "1.4.2",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
@@ -23,7 +23,7 @@
             "require": {
                 "ext-hash": "*",
                 "ext-json": "*",
-                "ext-mongodb": "^1.5.0",
+                "ext-mongodb": "^1.12.0",
                 "php": ">=5.5"
             },
             "require-dev": {
