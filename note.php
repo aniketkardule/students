@@ -59,6 +59,6 @@ You can contact me on my <a href="mailto:karduleaniket99@gmail.com">mail</a>.
       </p>
     
     </div>
-  
+  <?php   echo phpinfo() ;    ?>
 
 </body></html>
