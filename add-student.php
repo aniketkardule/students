@@ -105,7 +105,7 @@ label{
     <label>Date Of Birth</label>
     <input name="dob" id="" type="date" placeholder="Enter DOB" required>
   <label for="country">Profile photo url</label>
-   <input name="purl" id="" type="media" placeholder="Enter Profile" required>
+   <input name="purl" id="" type="media" value="user.jpg" placeholder="Enter Profile" required>
     <input style="background-color:green;color:#fff;" type="submit" value="Submit">
   </form>
 </div>
