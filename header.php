@@ -1,6 +1,6 @@
 <div class="wrapper">
         <div class="logo">
-                <span style="color:#fff;font-size:18px;">Student Diary</span>
+                <span style="color:#fff;font-size:24px;margin:auto auto auto 21px;font-weight:bold;">Student Diary</span>
         </div>
 <ul class="nav-area">
 <li><a href="#">Home</a></li>
