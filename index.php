@@ -4,7 +4,7 @@ $api = "https://studentsappp.herokuapp.com/";
 $url = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $uri = explode("?",$url);
 $result;
-if($url != "https://studentdiary1.herokuapp.com/students.php"){
+if($url != "https://studentdiary1.herokuapp.com/"){
      $fetch = file_get_contents($api.'search?'.$uri[1]);
 
 if(strpos($uri[1],"id") !== false){
