@@ -84,7 +84,7 @@ label{
 
 <div class="c">
 	<h3>Enter Student Details</h3>
-	<p class="dashboard"><a href="index.php">Go to dashboard</a></p>
+	<p class="dashboard"><a href="https://studentdiary1.herokuapp.com/">Go to dashboard</a></p>
   <div class="form">
       <label>Roll no</label>
        <input type="text" id="rn" value="<?=  $result->_id;  ?>" placeholder="Enter roll no">
