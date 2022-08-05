@@ -75,7 +75,7 @@ label{
 <div class="c">
 	<h3>Enter Student Details</h3>
 	<p class="dashboard"><a href="https://studentdiary1.herokuapp.com/">Go to dashboard</a></p>
-  <form action="https://studentsappp.herokuapp.com/" method="POST" onSubmit="window.location='https://studentdiary1.herokuapp.com/'">
+  <form action="https://studentsappp.herokuapp.com/" method="POST">
       <label>Roll no</label>
        <input type="text" id="fname" name="_id" placeholder="Enter roll no" required>
     <label for="fname">Name</label>
