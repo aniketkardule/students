@@ -354,7 +354,7 @@ input[type=text], select,input[type=number]{
      				}
      		
      	if(url !== ""){			
-     			document.location.href = "students.php"+url;
+     			document.location.href = url;
      			}
      			
      			
@@ -367,7 +367,7 @@ input[type=text], select,input[type=number]{
 	     if(value){
 		     
 		         if(!hasNumbers(value)){
-		          document.location.href = "students.php?name="+value;
+		          document.location.href = "?name="+value;
 		     }else{
 		        alert("Please enter valid name");
 		     }
@@ -387,7 +387,7 @@ function findById(){
    const value = document.getElementById('input').value;
 	if(value){
 		
-		          document.location.href = "students.php?id="+value;
+		          document.location.href = "?id="+value;
 		     }else{
 		        alert("Please enter valid roll no");
 		     }
