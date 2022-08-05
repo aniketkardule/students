@@ -160,7 +160,7 @@ label{
     <input value="<?=  $result->dob;  ?>" id="dob" type="text" placeholder="Enter DOB">
   <label>Profile photo url</label>
    <input value="<?=  $result->purl;  ?>" id="purl" type="text" placeholder="Enter Profile">
-    <input id="submit" type="submit" value="Submit">
+    <input style="background-color:green;color:#fff;" id="submit" type="submit" value="Submit">
   </div>
 </div>
      <script>
